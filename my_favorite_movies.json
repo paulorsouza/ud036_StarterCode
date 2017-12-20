@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Star Wars: Episode IV - A New Hope",
+        "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,643,1000_AL_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=oVxcQQXXxGQ"
+    },
+    {
+        "title": "Star Wars: The Force Awakens",
+        "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SY1000_CR0,0,677,1000_AL_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=sGbxmsDFVnE"
+    },
+    {
+        "title": "Inception",
+        "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=8hP9D6kZseM"
+    }
+]
