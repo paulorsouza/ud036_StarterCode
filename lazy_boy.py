@@ -15,6 +15,7 @@ def search_movie(title):
     response = urlopen(url)
     data = json.loads(response.read())
     first = data["results"][0]
+    print first["title"]
     trailer = get_trailer(first["id"])
     return {
         "title": first["title"],
@@ -31,9 +32,7 @@ def get_trailer(movie_id):
     response = urlopen(url)
     data = json.loads(response.read())
     for video in data["results"]:
-        print video
         if(video["type"] == "Trailer" and video["site"] == "YouTube"):
-            print "achou"
             return "https://www.youtube.com/watch?v=" + video["key"]
     # The sound of silence ^^
     return "https://www.youtube.com/watch?v=u9Dg-g7t2l4"
@@ -44,7 +43,6 @@ def run():
     args = sys.argv
     del args[0]
     for arg in args:
-        print arg
         movie_data = search_movie(arg)
         data_list.append(movie_data)
 
