@@ -7,12 +7,17 @@ I do not even know handle exception in python yet
 
 import sys
 import json
-from urllib import urlopen
+import urllib
+import urllib2
 
 def search_movie(title):
     """Receive a title and search in themoviedb for movie infos"""
-    url = "https://api.themoviedb.org/3/search/movie?page=1&query=" + title + "&language=en-US&api_key=4db22fd9f7e134e2440cb372ae452a44" # pylint: disable=C0301
-    response = urlopen(url)
+    query_args = {"page": "1", "query": title,
+                  "api_key": "4db22fd9f7e134e2440cb372ae452a44",
+                  "language": "en-US"}
+    enconded_args = urllib.urlencode(query_args)
+    url = "https://api.themoviedb.org/3/search/movie?" + enconded_args
+    response = urllib2.urlopen(url)
     data = json.loads(response.read())
     first = data["results"][0]
     print first["title"]
@@ -28,8 +33,12 @@ def get_trailer(movie_id):
     then filter that videos to find one trailer, if not find a trailer
     return clip of the sound of silence that is a baita musica (good song)
     """
-    url = "https://api.themoviedb.org/3/movie/" + str(movie_id) + "/videos?language=en-US&api_key=4db22fd9f7e134e2440cb372ae452a44" # pylint: disable=C0301
-    response = urlopen(url)
+    query_args = {"api_key": "4db22fd9f7e134e2440cb372ae452a44",
+                  "language": "en-US"}
+    enconded_args = urllib.urlencode(query_args)
+    url = "https://api.themoviedb.org/3/movie/" + str(movie_id) + "/videos?" + enconded_args
+    # enconded_url = urllib.urlencode(url)
+    response = urllib2.urlopen(url)
     data = json.loads(response.read())
     for video in data["results"]:
         if(video["type"] == "Trailer" and video["site"] == "YouTube"):
@@ -50,5 +59,5 @@ def run():
     json.dump(data_list, outfile)
     outfile.close()
 
-if __name__ == "main":
+if __name__ == "__main__":
     run()

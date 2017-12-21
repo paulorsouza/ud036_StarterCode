@@ -1,0 +1,110 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection: [close]
+      Host: [api.themoviedb.org]
+      User-Agent: [Python-urllib/2.7]
+    method: GET
+    uri: https://api.themoviedb.org/3/search/movie?query=Star+wars+1&api_key=4db22fd9f7e134e2440cb372ae452a44&page=1&language=en-US
+  response:
+    body: {string: !!python/unicode '{"page":1,"total_results":9,"total_pages":1,"results":[{"vote_count":5029,"id":1893,"video":false,"vote_average":6.4,"title":"Star
+        Wars: Episode I - The Phantom Menace","popularity":25.048395,"poster_path":"\/n8V09dDc02KsSN6Q4hC2BX6hN8X.jpg","original_language":"en","original_title":"Star
+        Wars: Episode I - The Phantom Menace","genre_ids":[12,28,878],"backdrop_path":"\/wdp4unWJWY9hGKN1tM56HeSt6PZ.jpg","adult":false,"overview":"Anakin
+        Skywalker, a young slave strong with the Force, is discovered on Tatooine.
+        Meanwhile, the evil Sith have returned, enacting their plot for revenge against
+        the Jedi.","release_date":"1999-05-19"},{"vote_count":5807,"id":330459,"video":false,"vote_average":7.4,"title":"Rogue
+        One: A Star Wars Story","popularity":39.503105,"poster_path":"\/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg","original_language":"en","original_title":"Rogue
+        One: A Star Wars Story","genre_ids":[28,12,878],"backdrop_path":"\/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg","adult":false,"overview":"A
+        rogue band of resistance fighters unite for a mission to steal the Death Star
+        plans and bring a new hope to the galaxy.","release_date":"2016-12-14"},{"vote_count":30,"id":333355,"video":true,"vote_average":7.9,"title":"Star
+        Wars: Clone Wars: Volume 1","popularity":3.99891,"poster_path":"\/2Bc0Ust8YlcJy6tSwiXTLu66xRa.jpg","original_language":"en","original_title":"Star
+        Wars: Clone Wars (Volume 1)","genre_ids":[28,12,16,14,878],"backdrop_path":"\/jwAVVivirH1vCceiTakFdLqiL9o.jpg","adult":false,"overview":"The
+        Saga continues with the Emmy-winning \"Star Wars: Clone Wars.\" This animated
+        micro-series, directed by Genndy Tartakovsky, captures George Lucas'' vision
+        in a dynamic animated style that is a visual delight for all ages.  \"Star
+        Wars: Clone Wars\" Volume 1 reveals the epic adventures that bridge the story
+        arc between \"Star Wars: Episode II: Attack of the Clones\" and \"Star Wars:
+        Episode III: Revenge of the Sith.\" Follow the valiant Jedi Knights and the
+        Brave soldiers of the Republic''s clone army as they battle against the droid
+        forces of the Separatists, led by the evil Sith Lord, Count Dooku. Witness
+        the battles that made galactic heroes out of Anakin Skywalker and Obi-Wan
+        Kenobi, and along the way get a first look at the new menace from Episode
+        III, General Grevious.  This is a must-have for any \"Star Wars\" collection.","release_date":"2005-03-21"},{"vote_count":0,"id":486215,"video":false,"vote_average":0,"title":"Untitled
+        Rian Johnson Star Wars Project #1","popularity":1.000039,"poster_path":null,"original_language":"en","original_title":"Untitled
+        Rian Johnson Star Wars Project #1","genre_ids":[],"backdrop_path":null,"adult":false,"overview":"The
+        first in a trilogy of films, set apart from the Skywalker Saga.","release_date":""},{"vote_count":0,"id":465370,"video":false,"vote_average":0,"title":"Star
+        Wars Knights of the Old Republic: Episode 1: A Familiar Path - Special Edition","popularity":1.174762,"poster_path":"\/nnAe38HbzJLtNO54VnAAA4QS5m4.jpg","original_language":"en","original_title":"Star
+        Wars Knights of the Old Republic: Episode 1: A Familiar Path - Special Edition","genre_ids":[12,28],"backdrop_path":"\/2odGNsZlTIO4YuBl3V97QRsUY2N.jpg","adult":false,"overview":"The
+        Galactic Republic lies on the verge of collapse. Darth Malak has seized the
+        mantle of Dark Lord and unleashed an invincible Sith armada upon an unsuspecting
+        galaxy. As Malak''s war of conquest grips the Outer Rim, a young Jedi named
+        Bastila Shan sets forth on a dangerous journey that will change the fate of
+        the galaxy....","release_date":"2017-07-05"},{"vote_count":0,"id":426860,"video":false,"vote_average":0,"title":"Pro
+        Wrestling USA: Star Wars 1985","popularity":1.007875,"poster_path":null,"original_language":"en","original_title":"Pro
+        Wrestling USA: Star Wars 1985","genre_ids":[],"backdrop_path":null,"adult":false,"overview":"February
+        24, 1985 in East Rutherford, NJ","release_date":""},{"vote_count":6518,"id":1891,"video":false,"vote_average":8.2,"title":"The
+        Empire Strikes Back","popularity":26.09999,"poster_path":"\/6u1fYtxG5eqjhtCPDx04pJphQRW.jpg","original_language":"en","original_title":"The
+        Empire Strikes Back","genre_ids":[12,28,878],"backdrop_path":"\/amYkOxCwHiVTFKendcIW0rSrRlU.jpg","adult":false,"overview":"The
+        epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic
+        Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader
+        is more determined than ever to capture Luke. Meanwhile, rebel leader Princess
+        Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into
+        various stages of capture, betrayal and despair.","release_date":"1980-05-17"},{"vote_count":2,"id":81234,"video":true,"vote_average":7,"title":"Lego
+        Star Wars: Revenge of The Brick","popularity":2.770664,"poster_path":"\/yjp7x9PKCrmDtXxVQJiDFeV4ntG.jpg","original_language":"en","original_title":"Lego
+        Star Wars: Revenge of The Brick","genre_ids":[14,878,16,10751],"backdrop_path":"\/o7uqNjzJVOCtjGvzLx2Yzslr53t.jpg","adult":false,"overview":"Lego
+        Star Wars: Revenge of the Brick is a brickfilm (Lego short film) loosely based
+        on Star Wars Episode III: Revenge of the Sith.","release_date":"2005-08-05"},{"vote_count":6,"id":24551,"video":true,"vote_average":5.7,"title":"Dark
+        Resurrection Volume 1","popularity":1.810057,"poster_path":"\/6pkrffJaVqb7jmdGR9a6hVB2UoA.jpg","original_language":"en","original_title":"Dark
+        Resurrection Volume 1","genre_ids":[28,53,878],"backdrop_path":"\/3PLqaTIuRUt1DmUnClEyIdF54nF.jpg","adult":false,"overview":"An
+        ancient prophesy convinces the powerful Master Sorran to commence an obsessive
+        search for Eron, a mythical place capable of giving the Chosen One infinite
+        knowledge.","release_date":"2007-06-07"}]}'}
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, X-RateLimit-Limit, X-RateLimit-Remaining,
+          X-RateLimit-Reset, Retry-After']
+      cache-control: ['public, max-age=21600']
+      connection: [Close]
+      content-length: ['5707']
+      content-type: [application/json;charset=utf-8]
+      date: ['Thu, 21 Dec 2017 21:46:08 GMT']
+      etag: [18903e4430783a191b0cfab439daaef8]
+      server: [openresty]
+      vary: [Accept-Encoding]
+      x-ratelimit-limit: ['40']
+      x-ratelimit-remaining: ['38']
+      x-ratelimit-reset: ['1513892769']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Connection: [close]
+      Host: [api.themoviedb.org]
+      User-Agent: [Python-urllib/2.7]
+    method: GET
+    uri: https://api.themoviedb.org/3/movie/1893/videos?api_key=4db22fd9f7e134e2440cb372ae452a44&language=en-US
+  response:
+    body: {string: !!python/unicode '{"id":1893,"results":[{"id":"533ec65ac3a3685448000a24","iso_639_1":"en","iso_3166_1":"US","key":"bD7bpG-zDJQ","name":"Trailer
+        1","site":"YouTube","size":720,"type":"Trailer"},{"id":"533ec65ac3a3685448000a25","iso_639_1":"en","iso_3166_1":"US","key":"UgDhFgSTPIw","name":"Trailer
+        2","site":"YouTube","size":720,"type":"Trailer"},{"id":"58b5e74792514125e4000028","iso_639_1":"en","iso_3166_1":"US","key":"dZolO0z6EOs","name":"Trailer","site":"YouTube","size":360,"type":"Trailer"},{"id":"58b5e75a9251416129002932","iso_639_1":"en","iso_3166_1":"US","key":"_bRNF0daxp8","name":"Teaser","site":"YouTube","size":360,"type":"Teaser"}]}'}
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, X-RateLimit-Limit, X-RateLimit-Remaining,
+          X-RateLimit-Reset, Retry-After']
+      cache-control: ['public, max-age=28800']
+      connection: [Close]
+      content-length: ['629']
+      content-type: [application/json;charset=utf-8]
+      date: ['Thu, 21 Dec 2017 21:46:09 GMT']
+      etag: ['"d6dae3ba0cc7d7f9fbf46aa40e286933"']
+      server: [openresty]
+      x-memc: [HIT]
+      x-memc-age: ['11750']
+      x-memc-expires: ['17050']
+      x-memc-key: [d6c8418f2fc5ebe1d095fd25ce5b2dd2]
+      x-ratelimit-limit: ['40']
+      x-ratelimit-remaining: ['39']
+      x-ratelimit-reset: ['1513892779']
+    status: {code: 200, message: OK}
+version: 1

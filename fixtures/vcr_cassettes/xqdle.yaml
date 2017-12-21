@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Connection: [close]
+      Host: [api.themoviedb.org]
+      User-Agent: [Python-urllib/2.7]
+    method: GET
+    uri: https://api.themoviedb.org/3/search/movie?query=Xquedele&api_key=4db22fd9f7e134e2440cb372ae452a44&page=1&language=en-US
+  response:
+    body: {string: !!python/unicode '{"page":1,"total_results":0,"total_pages":1,"results":[]}'}
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, X-RateLimit-Limit, X-RateLimit-Remaining,
+          X-RateLimit-Reset, Retry-After']
+      cache-control: ['public, max-age=21600']
+      connection: [Close]
+      content-length: ['57']
+      content-type: [application/json;charset=utf-8]
+      date: ['Thu, 21 Dec 2017 21:46:10 GMT']
+      etag: [72b32a1f754ba1c09b3695e0cb6cde7f]
+      server: [openresty]
+      x-ratelimit-limit: ['40']
+      x-ratelimit-remaining: ['38']
+      x-ratelimit-reset: ['1513892779']
+    status: {code: 200, message: OK}
+version: 1
