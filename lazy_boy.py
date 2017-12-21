@@ -50,4 +50,5 @@ def run():
     json.dump(data_list, outfile)
     outfile.close()
 
-run()
+if __name__ == "main":
+    run()

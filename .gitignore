@@ -1,1 +1,5 @@
 *.pyc
+fresh_tomatoes.html
+lazy_boy.json
+.cache
+__pycache__
