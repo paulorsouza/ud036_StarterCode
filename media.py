@@ -1,4 +1,6 @@
 """Why modules need docstring?"""
+
+
 class Movie(object):
     """A model that represents movies"""
     def __init__(self, title, image_url, trailer_url):

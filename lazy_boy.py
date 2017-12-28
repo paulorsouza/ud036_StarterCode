@@ -10,8 +10,10 @@ import json
 import urllib
 import urllib2
 
+
 def search_movie(title):
     """Receive a title and search in themoviedb for movie infos"""
+    img_url = "https://image.tmdb.org/t/p/w300_and_h450_bestv2/"
     query_args = {"page": "1", "query": title,
                   "api_key": "4db22fd9f7e134e2440cb372ae452a44",
                   "language": "en-US"}
@@ -22,10 +24,12 @@ def search_movie(title):
     first = data["results"][0]
     print first["title"]
     trailer = get_trailer(first["id"])
+
     return {
         "title": first["title"],
-        "image": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/" + first["poster_path"],
+        "image": img_url + first["poster_path"],
         "trailer": trailer}
+
 
 def get_trailer(movie_id):
     """
@@ -36,7 +40,8 @@ def get_trailer(movie_id):
     query_args = {"api_key": "4db22fd9f7e134e2440cb372ae452a44",
                   "language": "en-US"}
     enconded_args = urllib.urlencode(query_args)
-    url = "https://api.themoviedb.org/3/movie/" + str(movie_id) + "/videos?" + enconded_args
+    url = ("https://api.themoviedb.org/3/movie/"
+           + str(movie_id) + "/videos?" + enconded_args)
     # enconded_url = urllib.urlencode(url)
     response = urllib2.urlopen(url)
     data = json.loads(response.read())
@@ -45,6 +50,7 @@ def get_trailer(movie_id):
             return "https://www.youtube.com/watch?v=" + video["key"]
     # The sound of silence ^^
     return "https://www.youtube.com/watch?v=u9Dg-g7t2l4"
+
 
 def run():
     """Generate json with movies info"""
@@ -58,6 +64,7 @@ def run():
     outfile = open("lazy_boy.json", "w")
     json.dump(data_list, outfile)
     outfile.close()
+
 
 if __name__ == "__main__":
     run()
